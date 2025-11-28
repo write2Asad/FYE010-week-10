@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Developer Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px 40px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border-radius: 6px;
+    }
+
+    section {
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #222;
+      font-size: 1.4rem;
+    }
+
+    .about p {
+      line-height: 1.6;
+    }
+
+    .skills-list,
+    .projects-list,
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .skills-list li,
+    .projects-list li,
+    .contact-list li {
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      margin: 4px 4px 0 0;
+      border-radius: 4px;
+      background: #eee;
+      font-size: 0.85rem;
+    }
+
+    .project-title {
+      font-weight: bold;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Front-End / Web Developer</p>
+  </header>
+
+  <div class="container">
+
+    <!-- About -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a web developer with a passion for creating clean, responsive, and user-friendly 
+        websites and web applications. I enjoy working with modern web technologies and 
+        continuously improving my skills.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <div>
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">React</span>
+        <span class="badge">Node.js</span>
+        <span class="badge">Git / GitHub</span>
+        <span class="badge">Responsive Design</span>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <div class="project-title">Portfolio Website</div>
+          <div>A responsive personal portfolio to showcase projects and skills.</div>
+          <div><a href="#" target="_blank">View Project</a></div>
+        </li>
+        <li>
+          <div class="project-title">Todo App</div>
+          <div>A simple task manager built with HTML, CSS, and JavaScript.</div>
+          <div><a href="#" target="_blank">View Project</a></div>
+        </li>
+        <li>
+          <div class="project-title">API Dashboard</div>
+          <div>A small dashboard consuming a public API and displaying data visually.</div>
+          <div><a href="#" target="_blank">View Project</a></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    © <span id="year"></span> Your Name – Web Developer
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
